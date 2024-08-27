@@ -16,7 +16,7 @@ During which hours and at which pickup points do trip requests peak, and how can
 
 ### Peak Hours Analysis
 To meet the objective of identifying when trip requests peak, I began by analyzing the hourly distribution of trip requests. This analysis focuses on extracting the hour from the "Request timestamp" and counting the number of requests for each hour. By grouping the data by hour, I can identify specific times of the day when the demand for trips is highest.
-'''
+```sql
 SELECT 
     EXTRACT(HOUR FROM "Request timestamp") AS hour_of_day,
     COUNT(*) AS number_of_requests
@@ -26,4 +26,4 @@ GROUP BY
     EXTRACT(HOUR FROM "Request timestamp")
 ORDER BY 
     hour_of_day;
-´´´
+
