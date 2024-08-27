@@ -159,7 +159,7 @@ To better understand the supply versus demand, the analysis on Cancelled Trips w
 
 ### 3.5 Driver Availability During Peak Cancellation Hours 
 
-To understand the causes of trip cancellations, the Driver Availability query was used to analyze driver availability during peak cancellation hours.The detailed query can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql). 
+To understand the causes of trip cancellations, the Driver Availability query was used to analyze driver availability during peak cancellation hours. The detailed query can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql).  
 **Insights:** The number of drivers available is relatively stable across the days, ranging from 286 to 292. This suggests that having more drivers does not fully address the issue of trip cancellations, indicating that other factors might be influencing the cancellation rate.
 ![Alt Text](assets/3.5.jpg)
 **Recommendations:** Investigate External Factors: Explore if there are external factors influencing cancellations, such as local events, weather conditions, or changes in demand patterns, and adjust operational strategies accordingly.
