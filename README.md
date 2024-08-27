@@ -165,7 +165,7 @@ To understand the causes of trip cancellations, the Driver Availability query wa
 **Recommendation:** Investigate External Factors: Explore if there are external factors influencing cancellations, such as local events, weather conditions, or changes in demand patterns, and adjust operational strategies accordingly.
 
 ### 3.6 Investigating Customer Behavior 
-To explore the relationship between cancellations and pickup points, the following query was executed:
+To explore the relationship between cancelled trips and pickup points, the following query was executed:
 ```sql
 SELECT 
     EXTRACT(DAY FROM "Request timestamp") AS days,
