@@ -52,7 +52,8 @@ How many trips does each driver complete in a given time period?
 ### 2.1 The average trip duration per driver
 To achieve the objective of evaluating driver performance, the query below calculates the average duration of completed trips for each driver.
 ### Data Overview:
-**Average Trip Duration (Minutes)**: This metric reflects how long, on average, a trip takes for each driver. **Number of Trips**: This represents the total number of trips completed by each driver.
+**Average Trip Duration (Minutes)**: This metric reflects how long, on average, a trip takes for each driver.  
+**Number of Trips**: This represents the total number of trips completed by each driver.
 
 ```sql
 SELECT 
