@@ -47,9 +47,25 @@ To pinpoint the locations with the most requests, I conducted a Pickup Point Ana
 To evaluate driver performance by understanding the efficiency and productivity of each driver.
 ### Question: 
 What is the average duration of trips for each driver? 
-Are there significant differences in trip durations among drivers?
 How many trips does each driver complete in a given time period?
 
+### The average trip duration per driver
+To achieve the objective of evaluating driver performance, the query below calculates the average duration of completed trips for each driver. 
+
+```sql
+SELECT 
+    "Driver id",
+	Round(AVG(EXTRACT(EPOCH FROM ("Drop timestamp" - "Request timestamp")) / 60), 2) 
+	AS average_trip_duration_minutes
+FROM 
+    uber_request_data
+WHERE 
+    "Status" = 'Trip Completed'
+GROUP BY 
+    "Driver id"
+ORDER BY 
+    average_trip_duration_minutes DESC;
+```
 
 
 
