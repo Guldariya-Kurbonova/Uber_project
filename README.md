@@ -1,4 +1,3 @@
-# Uber_request
 # Introduction
 ## Project Overview: 
 This project aims to analyze Uber trip data to identify key patterns and trends that can inform data-driven decision-making. The primary focus is on understanding demand fluctuations, driver performance, and operational efficiency. By examining various factors such as peak hours, trip completion rates, and supply-demand mismatches, this analysis seeks to provide actionable insights that can enhance service delivery and optimize resource allocation.
@@ -35,6 +34,10 @@ Evening Peak: From 5 PM to 8 PM, there is another significant rise in requests, 
 **Interpretation:** These peaks correspond to common commuting hours, suggesting that Uber experiences the highest demand when people are traveling to and from work. This insight implies that these time periods are critical for ensuring an adequate supply of drivers to meet the high demand.
 ![Alt Text](assets/1.jpg)
 *Figure 1. The line chart visualizes the hourly distribution of Uber ride requests*
+
+
+[Link Text](uber_request/1_demand_analysis.sql)
+
 
 
 
