@@ -154,7 +154,7 @@ Time-Based Analysis of Car Availability was conducted through this query:[Open S
 ![Alt Text](assets/3.3.jpg)
 
 ### 3.4 Identifying Peak Hours for Cancelled Trips
-The results suggest that cancellations are more frequent in the morning, which could point to potential issues with availability or demand management during this time.The detailed findings can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql). 
+To better understand the supply versus demand, the analysis on Cancelled Trips was conducted to identify peak hours for canceled trips.The detailed findings can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql). 
 ![Alt Text](assets/3.4.jpg)
 
 
