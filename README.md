@@ -98,7 +98,7 @@ Example: Driver ID 84 has one of the highest average trip durations (65.58 minut
 Example: Driver ID 22 has a relatively high number of trips (16) with an average trip duration that is balanced for both efficiency and productivity.  
 *Balanced Efficiency and Productivity:* Drivers who manage to maintain a balance between average trip duration and the number of trips can be considered both efficient and productive. Example: Driver ID 125, with 14 trips and an average trip duration of around 50.15 minutes, appears to maintain a good balance.
 
-**Recommendations:** Further Analysis: Segment drivers by regions or shifts to see if specific patterns contribute to their performance differences.
+**Recommendation:** Further Analysis: Segment drivers by regions or shifts to see if specific patterns contribute to their performance differences.
 
 
 ## 3. Supply-Demand Mismatch
@@ -162,8 +162,16 @@ To better understand the supply versus demand, the analysis on Cancelled Trips w
 To understand the causes of trip cancellations, the Driver Availability query was used to analyze driver availability during peak cancellation hours. The detailed query can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql).  
 **Insights:** The number of drivers available is relatively stable across the days, ranging from 286 to 292. This suggests that having more drivers does not fully address the issue of trip cancellations, indicating that other factors might be influencing the cancellation rate.
 ![Alt Text](assets/3.5.jpg)
-**Recommendations:** Investigate External Factors: Explore if there are external factors influencing cancellations, such as local events, weather conditions, or changes in demand patterns, and adjust operational strategies accordingly.
+**Recommendation:** Investigate External Factors: Explore if there are external factors influencing cancellations, such as local events, weather conditions, or changes in demand patterns, and adjust operational strategies accordingly.
 
+### 3.6 Investigating Customer Behavior 
+
+**Interpretation of the result:** Cancellations are much higher in City pickup points (27.79% to 32.94%) compared to Airport pickup points (4.93% to 7.24%). Cancellation rates at Airport pickup points are consistently low, suggesting reliable service.
+![Alt Text](assets/3.6.jpg)
+
+
+**Recommendation:** Focus on City Pickup Points:
+Implement targeted interventions to reduce high cancellation rates in City areas, for example, enhancing customer support.
 
 
 
