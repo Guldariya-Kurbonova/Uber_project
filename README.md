@@ -26,7 +26,7 @@ GROUP BY
     EXTRACT(HOUR FROM "Request timestamp")
 ORDER BY 
     hour_of_day;
-
+´´´
 
 **Finding:** The data shows that the number of requests increases significantly during specific hours of the day. Notably:
 Morning Peak: Between 7 AM and 9 AM, the number of requests rises steadily, peaking at 431 requests at 9 AM.
