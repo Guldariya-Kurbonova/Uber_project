@@ -50,7 +50,9 @@ What is the average duration of trips for each driver?
 How many trips does each driver complete in a given time period?
 
 ### 2.1 The average trip duration per driver
-To achieve the objective of evaluating driver performance, the query below calculates the average duration of completed trips for each driver. 
+To achieve the objective of evaluating driver performance, the query below calculates the average duration of completed trips for each driver.
+### Data Overview:
+**Average Trip Duration (Minutes)**: This metric reflects how long, on average, a trip takes for each driver. **Number of Trips**: This represents the total number of trips completed by each driver.
 
 ```sql
 SELECT 
@@ -67,6 +69,10 @@ ORDER BY
     average_trip_duration_minutes DESC;
 ```
 
+## Interpretation of the results:
+**Efficiency (Average Trip Duration)**: Drivers with lower average trip durations may be more efficient, as they complete trips faster. However, very short durations might indicate shorter distances or simpler routes rather than higher efficiency.
+The top-performing drivers in terms of efficiency have average trip durations ranging from approximately 45 to 66 minutes.
+**Productivity (Number of Trips)**: A higher number of trips indicates higher productivity. Drivers who complete more trips are generally more productive. Productivity varies significantly among drivers, with some completing as many as 16 trips, while others complete only 4.
 
 
 
