@@ -70,9 +70,21 @@ ORDER BY
     average_trip_duration_minutes DESC;
 ```
 
-**Interpretation of the results:**
+**Interpretation of the result:**
 **Efficiency (Average Trip Duration)**: Drivers with lower average trip durations may be more efficient, as they complete trips faster. However, very short durations might indicate shorter distances or simpler routes rather than higher efficiency. The top-performing drivers in terms of efficiency have average trip durations ranging from approximately 45 to 66 minutes.  
+
+
+
+
+
 **Productivity (Number of Trips)**: A higher number of trips indicates higher productivity. Drivers who complete more trips are generally more productive. Productivity varies significantly among drivers, with some completing as many as 16 trips, while others complete only 4.
 
+**Insights:**  
+*High Efficiency, Low Productivity:* Drivers who have low average trip durations but fewer trips might be taking shorter routes or working fewer hours.
+Example: Driver ID 84 has one of the highest average trip durations (65.58 minutes) but could also be balanced by a high number of trips, making them efficient and productive.  
+*High Productivity, Moderate Efficiency:* Drivers who complete a high number of trips but have moderate average durations might be consistently working longer hours.
+Example: Driver ID 22 has a relatively high number of trips (16) with an average trip duration that is balanced for both efficiency and productivity.  
+*Balanced Efficiency and Productivity:* Drivers who manage to maintain a balance between average trip duration and the number of trips can be considered both efficient and productive. Example: Driver ID 125, with 14 trips and an average trip duration of around 50.15 minutes, appears to maintain a good balance.
 
+**Recommendations:** Further Analysis: Segment drivers by regions or shifts to see if specific patterns contribute to their performance differences.
 
