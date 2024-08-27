@@ -153,8 +153,9 @@ Time-Based Analysis of Car Availability was conducted through this query:[Open S
 **Interpretation of the result:** The analysis shows that the evening period has the highest rate of no cars available at 56.94%, compared to 37.46% in the afternoon and 26.20% in the morning. This suggests that car shortages are most severe in the evening, reflecting the peak demand times. Improving car availability during the evening could help address these shortages and enhance service levels.
 ![Alt Text](assets/3.3.jpg)
 
-
-
+### 3.4 Identifying Peak Hours for Cancelled Trips
+The results suggest that cancellations are more frequent in the morning, which could point to potential issues with availability or demand management during this time.The detailed findings can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql). 
+![Alt Text](assets/3.4.jpg)
 
 
 
