@@ -100,3 +100,15 @@ Example: Driver ID 22 has a relatively high number of trips (16) with an average
 
 **Recommendations:** Further Analysis: Segment drivers by regions or shifts to see if specific patterns contribute to their performance differences.
 
+
+## 3. Supply-Demand Mismatch
+### Objective:  
+To identify periods when the number of requests exceeds the number of completed trips,  indicating potential supply shortages.  
+### Questions: 
+Supply vs. Demand: Are there periods when the number of trip requests exceeds the number of trips completed? What are the times or dates when supply might not meet demand?
+
+
+
+
+
+
