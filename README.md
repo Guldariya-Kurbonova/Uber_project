@@ -165,7 +165,21 @@ To understand the causes of trip cancellations, the Driver Availability query wa
 **Recommendation:** Investigate External Factors: Explore if there are external factors influencing cancellations, such as local events, weather conditions, or changes in demand patterns, and adjust operational strategies accordingly.
 
 ### 3.6 Investigating Customer Behavior 
-
+To explore the relationship between cancellations and pickup points, the following query was executed:
+```sql
+SELECT 
+    EXTRACT(DAY FROM "Request timestamp") AS days,
+    "Pickup point",
+    COUNT(*) AS total_requests,
+    SUM(CASE WHEN "Status" = 'Cancelled' THEN 1 ELSE 0 END) AS cancelled_trips,
+    ROUND(SUM(CASE WHEN "Status" = 'Cancelled' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS cancellation_rate
+FROM 
+    uber_request_data
+GROUP BY 
+    days, "Pickup point"
+ORDER BY 
+    cancellation_rate DESC;
+```
 **Interpretation of the result:** Cancellations are much higher in City pickup points (27.79% to 32.94%) compared to Airport pickup points (4.93% to 7.24%). Cancellation rates at Airport pickup points are consistently low, suggesting reliable service.
 ![Alt Text](assets/3.6.jpg)
 
