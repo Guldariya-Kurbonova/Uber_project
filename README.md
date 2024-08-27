@@ -13,7 +13,7 @@ To analyze trip request patterns by time of day and pickup location to optimize 
 ### Question: 
 During which hours and at which pickup points do trip requests peak, and how can this data inform strategic decisions on driver deployment?
 
-### Peak Hours Analysis
+### 1.1 Peak Hours Analysis
 To meet the objective of identifying when trip requests peak, I began by analyzing the hourly distribution of trip requests. This analysis focuses on extracting the hour from the "Request timestamp" and counting the number of requests for each hour. By grouping the data by hour, I can identify specific times of the day when the demand for trips is highest.
 ```sql
 SELECT 
@@ -35,7 +35,7 @@ Evening Peak: From 5 PM to 8 PM, there is another significant rise in requests, 
 ![Alt Text](assets/1.jpg)
 *Figure 1. The line chart visualizes the hourly distribution of Uber ride requests*
 
-### Pickup Point Analysis
+### 1.2 Pickup Point Analysis
 To pinpoint the locations with the most requests, I conducted a Pickup Point Analysis. The detailed findings can be accessed here: [Open SQL Query](uber_request/1_demand_analysis.sql).
 
 **Findings:** The distribution of requests between pickup points is relatively balanced, with the City having slightly more requests (3,507) compared to the Airport (3,238).  
@@ -49,7 +49,7 @@ To evaluate driver performance by understanding the efficiency and productivity 
 What is the average duration of trips for each driver? 
 How many trips does each driver complete in a given time period?
 
-### The average trip duration per driver
+### 2.1 The average trip duration per driver
 To achieve the objective of evaluating driver performance, the query below calculates the average duration of completed trips for each driver. 
 
 ```sql
