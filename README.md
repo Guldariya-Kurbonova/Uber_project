@@ -110,7 +110,7 @@ Supply vs. Demand: Are there periods when the number of trip requests exceeds th
 ### 3.1 Requests vs. Completed Trips
 To achieve the objective, I began by analyzing the relationship between requests and completed trips using the following query: [Open SQL Query](uber_request/3_supply_demand.sql).
 
-
-
+The total number of requests increases steadily from July 11 to July 15, with the highest number of requests (1381) on July 15, indicating peak demand as displayed in Figure 2. The completion rate drops from 43.96% on July 11 to 39.17% on July 14, then slightly rises to 40.62% on July 15. This shows a growing mismatch between demand and supply, as fewer trips are completed compared to the number of requests. 
+![Alt Text](assets/3.1.jpg)
 
 
