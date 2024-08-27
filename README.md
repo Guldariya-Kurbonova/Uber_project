@@ -73,9 +73,21 @@ ORDER BY
 **Interpretation of the result:**
 **Efficiency (Average Trip Duration)**: Drivers with lower average trip durations may be more efficient, as they complete trips faster. However, very short durations might indicate shorter distances or simpler routes rather than higher efficiency. The top-performing drivers in terms of efficiency have average trip durations ranging from approximately 45 to 66 minutes.  
 
-
-
-
+### 2.2 Number of Trips per Driver
+To determine the number of trips per driver, the following query was executed.
+```sql
+SELECT 
+    "Driver id",
+    COUNT(*) AS number_of_trips
+FROM 
+    uber_request_data
+WHERE 
+    "Status" = 'Trip Completed'
+GROUP BY 
+    "Driver id"
+ORDER BY 
+    number_of_trips DESC;
+```
 
 **Productivity (Number of Trips)**: A higher number of trips indicates higher productivity. Drivers who complete more trips are generally more productive. Productivity varies significantly among drivers, with some completing as many as 16 trips, while others complete only 4.
 
