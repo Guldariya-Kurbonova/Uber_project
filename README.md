@@ -144,4 +144,18 @@ ORDER BY
     uncompleted_requests DESC;
 ```
 
+**Interpretation of the result:** The evening period shows the highest demand with 63.25% of requests going uncompleted, indicating a significant supply-demand mismatch in Figure 3. The morning also experiences high demand with 58.03% uncompleted requests, while the afternoon, though less severe, still has a notable 47.72%. These insights suggest a need to better align driver availability with peak demand times to reduce uncompleted requests.
+![Alt Text](assets/3.2.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
 
