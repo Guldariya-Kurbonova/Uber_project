@@ -154,12 +154,12 @@ Time-Based Analysis of Car Availability was conducted through this query:[Open S
 ![Alt Text](assets/3.3.jpg)
 
 ### 3.4 Identifying Peak Hours for Cancelled Trips
-To better understand the supply versus demand, the analysis on Cancelled Trips was conducted to identify peak hours for canceled trips. The detailed findings can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql). 
+To better understand the supply versus demand, the analysis on Cancelled Trips was conducted to identify peak hours for canceled trips. The detailed query can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql). 
 ![Alt Text](assets/3.4.jpg)
 
 ### 3.5 Driver Availability During Peak Cancellation Hours 
 
-To understand the causes of trip cancellations, the Driver Availability query was used to analyze driver availability during peak cancellation hours.The detailed findings can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql). 
+To understand the causes of trip cancellations, the Driver Availability query was used to analyze driver availability during peak cancellation hours.The detailed query can be accessed here: [Open SQL Query](uber_request/3_supply_demand.sql). 
 **Insights:** The number of drivers available is relatively stable across the days, ranging from 286 to 292. This suggests that having more drivers does not fully address the issue of trip cancellations, indicating that other factors might be influencing the cancellation rate.
 ![Alt Text](assets/3.5.jpg)
 **Recommendations:** Investigate External Factors: Explore if there are external factors influencing cancellations, such as local events, weather conditions, or changes in demand patterns, and adjust operational strategies accordingly.
