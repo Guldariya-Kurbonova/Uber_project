@@ -38,7 +38,7 @@ Evening Peak: From 5 PM to 8 PM, there is another significant rise in requests, 
 ### Pickup Point Analysis
 To pinpoint the locations with the most requests, I conducted a Pickup Point Analysis. The detailed findings can be accessed here: [Open SQL Query](uber_request/1_demand_analysis.sql).
 
-**Findings:** The distribution of requests between pickup points is relatively balanced, with the City having slightly more requests (3,507) compared to the Airport (3,238).
+**Findings:** The distribution of requests between pickup points is relatively balanced, with the City having slightly more requests (3,507) compared to the Airport (3,238).  
 **Interpretation:** Both the City and Airport are major hubs for Uber requests, but the slightly higher demand in the City suggests that it is a key area for Uber's operations. 
 
 
