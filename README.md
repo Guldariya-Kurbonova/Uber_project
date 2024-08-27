@@ -4,7 +4,6 @@ This project aims to analyze Uber trip data to identify key patterns and trends 
 
 The dataset used in this analysis is sourced from [here](https://www.kaggle.com/datasets/hellbuoy/uber-supplydemand-gap).
 
-# Background
 
 # Analysis & Findings
 ## 1. Demand Analysis 
@@ -194,7 +193,7 @@ Implement targeted interventions to reduce high cancellation rates in City areas
 ## Conclusion & Final Recommendations:  
 *Focus on Peak Hours*: Uber should ensure there are enough drivers during the morning and evening peak hours, especially from 7 AM to 9 AM and from 5 PM to 8 PM. This will help handle the high number of requests and reduce uncompleted trips.  
 *Address Evening Shortages:* There are more cars missing during the evening than at other times. Increasing the number of available cars in the evening will help meet the high demand and improve service.  
-*Improve City Pickup Points*: Cancellations are higher in city areas compared to airports. Uber should work on reducing cancellations in the city by improving customer support and addressing any local issues that might be causing problems.
+*Improve City Pickup Points*: Cancellations are higher in city areas compared to airports. Uber should work on reducing cancellations in the city by improving customer support and addressing any local issues that might be causing problems.  
 *Examine External Factors*: Since having more drivers doesn’t always reduce cancellations, Uber should look into other factors like local events or weather that might be affecting trip cancellations and adjust their strategies accordingly.
 
 
