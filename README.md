@@ -113,4 +113,35 @@ To achieve the objective, I began by analyzing the relationship between requests
 **Interpretation of the result:**  The total number of requests increases steadily from July 11 to July 15, with the highest number of requests (1381) on July 15, indicating peak demand as displayed in Figure 2. The completion rate drops from 43.96% on July 11 to 39.17% on July 14, then slightly rises to 40.62% on July 15. This shows a growing mismatch between demand and supply, as fewer trips are completed compared to the number of requests. 
 ![Alt Text](assets/3.1.jpg)
 
+### 3.2 Identifying the High-Demand Periods
+To assess supply and demand, high-demand periods were identified using the following query:
+```sql
+WITH request_summary AS (
+    SELECT
+        CASE
+            WHEN EXTRACT(HOUR FROM "Request timestamp") BETWEEN 0 AND 11 THEN 'Morning'
+            WHEN EXTRACT(HOUR FROM "Request timestamp") BETWEEN 12 AND 17 THEN 'Afternoon'
+            ELSE 'Evening'
+        END AS time_phase,
+        COUNT(*) AS total_requests,
+        COUNT(CASE WHEN "Status" = 'Trip Completed' THEN 1 END) AS completed_trips
+    FROM
+        uber_request_data
+    GROUP BY
+        time_phase
+)
+SELECT
+    time_phase,
+    total_requests,
+    completed_trips,
+    total_requests - completed_trips AS uncompleted_requests,
+    ROUND((total_requests - completed_trips) * 100.0 / total_requests, 2) AS uncompleted_requests_percentage
+FROM
+    request_summary
+WHERE
+    total_requests > completed_trips
+ORDER BY
+    uncompleted_requests DESC;
+```
+
 
