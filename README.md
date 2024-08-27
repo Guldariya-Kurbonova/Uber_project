@@ -35,8 +35,8 @@ Evening Peak: From 5 PM to 8 PM, there is another significant rise in requests, 
 ![Alt Text](assets/1.jpg)
 *Figure 1. The line chart visualizes the hourly distribution of Uber ride requests*
 
-
-[Open SQL Query](uber_request/1_demand_analysis.sql)
+### Pickup Point Analysis
+To pinpoint the locations with the most requests, I conducted a Pickup Point Analysis. The detailed findings can be accessed here: [Open SQL Query](uber_request/1_demand_analysis.sql)
 
 
 
