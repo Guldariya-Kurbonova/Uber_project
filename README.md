@@ -42,6 +42,15 @@ To pinpoint the locations with the most requests, I conducted a Pickup Point Ana
 **Interpretation:** Both the City and Airport are major hubs for Uber requests, but the slightly higher demand in the City suggests that it is a key area for Uber's operations. 
 
 
+##  2. Driver Performance 
+### Objective:
+To evaluate driver performance by understanding the efficiency and productivity of each driver.
+### Question: 
+What is the average duration of trips for each driver? 
+Are there significant differences in trip durations among drivers?
+How many trips does each driver complete in a given time period?
+
+
 
 
 
